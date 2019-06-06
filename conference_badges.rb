@@ -5,7 +5,6 @@ def badge_maker(name)
 end
 
 
-
 def batch_badge_creator(array)
   nuarray = []
   array.each do |name|
@@ -13,9 +12,6 @@ def batch_badge_creator(array)
   end
   return nuarray
 end
-
-# batch_badge_creator(people)
-
 
 
 def assign_rooms(array)
@@ -28,7 +24,6 @@ def assign_rooms(array)
   return nuarray
 end
 
-# assign_rooms(people)
 
 def printer(array)
   batch_badge_creator(array).each do |id|
