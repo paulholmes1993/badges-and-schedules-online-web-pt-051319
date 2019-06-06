@@ -7,7 +7,7 @@ end
 
 def batch_badge_creator(people)
   nuarray = []
-  array.each do |name|
+  people.each do |name|
     nuarray.push("Hello, my name is #{name}.")
   end
   return nuarray
@@ -17,7 +17,7 @@ end
 def assign_rooms(people)
   nuarray = []
   counter = 1
-  array.each do |name|
+  people.each do |name|
     nuarray.push("Hello, #{name}! You'll be assigned to room #{counter}!")
     counter += 1
   end
@@ -25,12 +25,12 @@ def assign_rooms(people)
 end
 
 
-def printer(array)
-  batch_badge_creator(array).each do |id|
+def printer(people)
+  batch_badge_creator(people).each do |id|
     puts id
   end 
   
-  assign_rooms(array).each do |id|
+  assign_rooms(people).each do |id|
     puts id 
   end
 end 
